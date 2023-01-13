@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    body{
+         font-family: 'Noto Sans Thai',helvetica neue,Helvetica,sans-serif;
+         @apply bg-black text-white;
+
+    }
+    header{
+        @apply fixed  top-0 z-40 flex w-full items-center justify-between px-4 py-4 transition-all lg:px-10 lg:pt-6
+    }
+
+}
+@layer components {
+    .headerLink{
+        @apply  cursor-pointer text-[16px] font-medium text-white capitalize inline-block  relative  transition duration-500
+    }
+    .headerLink::before{
+        @apply content-[''] absolute -bottom-[5px] left-0 w-0 h-[4px]  opacity-0 transition-all duration-500 bg-white
+    }
+    .headerLink:hover::before{
+        @apply w-full opacity-100
+    }
+    .headerLink.active::after{
+        @apply content-[''] absolute -bottom-[5px] left-0 w-0 h-[4px]  opacity-0 transition-all duration-500 bg-white
+    }
+
+    .bannerButton{
+        @apply flex items-center gap-x-2 rounded px-5 text-sm font-semibold transition
+        hover:opacity-75 md:py-2 md:px-6 md:text-lg ;
+    }
+    .blackbg{
+       
+        opacity: 70%;
+    }
+    .liday{
+        @apply cursor-pointer relative whitespace-nowrap  flex-1 flex-shrink-0 md:cursor-pointer md:relative md:flex-1 md:flex-shrink-0
+    }
+    .ulday{
+        @apply flex overflow-hidden text-center lg:px-72 md:flex md:first-letter:overflow-hidden md:text-center md:px-[190px]
+    }
+    .ulday .liday{
+        @apply list-none md:list-none
+    }
+    .ulday .liday .linkx{
+        @apply relative block no-underline uppercase text-white font-bold md:relative md:block md:no-underline md:uppercase
+    }
+    .ulday .liaction .linkx{
+        @apply bg-white text-black rounded-full mx-2 my-2 -top-2 
+    }
+
+    
+
+
+
+     
+}
