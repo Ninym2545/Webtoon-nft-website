@@ -7,147 +7,78 @@ const products = [
       name: 'I Plan to Divorce My Villain Husband but We Have A Child',
       href: '#',
       imageSrc: '/b-1.jpeg',
-      day:'วันจันทร์'
+      day:{en:'Mon' , th:'วันจันทร์'}
     },
-    {
-      id: 1,
-      name: 'I Plan to Divorce My Villain Husband but We Have A Child',
-      href: '#',
-      imageSrc: '/b-1.jpeg',
-      day:'วันจันทร์'
-    },
-    {
-      id: 1,
-      name: 'I Plan to Divorce My Villain Husband but We Have A Child',
-      href: '#',
-      imageSrc: '/b-1.jpeg',
-      day:'วันจันทร์'
-    },
-    {
-      id: 1,
-      name: 'I Plan to Divorce My Villain Husband but We Have A Child',
-      href: '#',
-      imageSrc: '/b-1.jpeg',
-      day:'วันจันทร์'
-    },
-    {
-      id: 1,
-      name: 'I Plan to Divorce My Villain Husband but We Have A Child',
-      href: '#',
-      imageSrc: '/b-1.jpeg',
-      day:'วันจันทร์'
-    },
-    {
-      id: 1,
-      name: 'I Plan to Divorce My Villain Husband but We Have A Child',
-      href: '#',
-      imageSrc: '/b-1.jpeg',
-      day:'วันจันทร์'
-    },
-    {
-      id: 1,
-      name: 'I Plan to Divorce My Villain Husband but We Have A Child',
-      href: '#',
-      imageSrc: '/b-1.jpeg',
-      day:'วันจันทร์'
-    },
-    {
-      id: 1,
-      name: 'I Plan to Divorce My Villain Husband but We Have A Child',
-      href: '#',
-      imageSrc: '/b-1.jpeg',
-      day:'วันจันทร์'
-    },
-    {
-      id: 1,
-      name: 'I Plan to Divorce My Villain Husband but We Have A Child',
-      href: '#',
-      imageSrc: '/b-1.jpeg',
-      day:'วันจันทร์'
-    },
-    {
-      id: 1,
-      name: 'I Plan to Divorce My Villain Husband but We Have A Child',
-      href: '#',
-      imageSrc: '/b-1.jpeg',
-      day:'วันจันทร์'
-    },
-    {
-      id: 1,
-      name: 'I Plan to Divorce My Villain Husband but We Have A Child',
-      href: '#',
-      imageSrc: '/b-1.jpeg',
-      day:'วันจันทร์'
-    },
+   
     {
       id: 2,
       name: 'Can We Become a Family?',
       href: '#',
       imageSrc: '/b-2.webp',
-      day:'วันอังคาร'
+      day:{en:'Tue' , th:'วันอังคาร'}
     },
     {
       id: 3,
       name: 'I Was Reincarnated as a Baby Fox God',
       href: '#',
       imageSrc: '/b-3.webp',
-      day:'วันพุธ'
+      day:{en:'Wed' , th:'วันพุธ'}
     },
     {
       id: 4,
       name: 'Actually I Was the Real One',
       href: '#',
       imageSrc: '/b-4.jpg',
-      day:'วันพฤหัสบดี'
+      day:{en:'Thu' , th:'วันพฤหัสบดี'}
     },
     {
       id: 5,
       name: 'Hey, Little Duke Only Trust Your Sister!',
       href: '#',
       imageSrc: '/b-5.webp',
-      day:'วันศุกร์'
+      day:{en:'Fri' , th:'วันศุกร์'}
     },
     {
       id: 6,
       name: 'I Plan to Divorce My Villain Husband but We Have A Child',
       href: '#',
       imageSrc: '/b-1.jpeg',
-      day:'วันเสาร์'
+      day:{en:'Sat' , th:'วันเสาร์'}
     },
     {
       id: 7,
       name: 'Can We Become a Family?',
       href: '#',
       imageSrc: '/b-2.webp',
-      day:'วันอาทิตย์'
+      day:{en:'Sun' , th:'วันอาทิตย์'}
     },
     {
       id: 8,
       name: 'I Was Reincarnated as a Baby Fox God',
       href: '#',
       imageSrc: '/b-3.webp',
-      day:'วันจันทร์'
+      day:{en:'Mon' , th:'วันจันทร์'}
     },
     {
       id: 9,
       name: 'Actually I Was the Real One',
       href: '#',
       imageSrc: '/b-4.jpg',
-      day:'วันอังคาร'
+      day:{en:'Tue' , th:'วันอังคาร'}
     },
     {
       id: 10,
       name: 'Hey, Little Duke Only Trust Your Sister!',
       href: '#',
       imageSrc: '/b-5.webp',
-      day:'วันพุธ'
+      day:{en:'Wed' , th:'วันพุธ'}
     },
     {
       id: 11,
       name: 'I Plan to Divorce My Villain Husband but We Have A Child',
       href: '#',
       imageSrc: '/b-1.jpeg',
-      day:'วันพฤหัสบดี'
+      day:{en:'Thu' , th:'วันพฤหัสบดี'}
     },
 
   ]
@@ -156,15 +87,16 @@ function Table() {
   return (
     <div>
         
-    <div className="pt-20  mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 md:px-10">
+    <div className="pt-28  mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 md:px-10">
         
       
-     {['วันจันทร์','วันอังคาร','วันพุธ','วันพฤหัสบดี','วันศุกร์','วันเสาร์','วันอาทิตย์'].map(day => (
-           <div className="mx-auto  lg:pt-10 lg:max-w-6xl md:max-w-3xl md:pt-10 md:pb-9 ">
-           <h2 className="font-bold text-[1.60rem] opacity-70">{day}</h2>
+     {[{en:'Mon' , th:'วันจันทร์'},{en:'Tue' , th:'วันอังคาร'},{en:'Wed' , th:'วันพุธ'},{en:'Thu' , th:'วันพฤหัสบดี'},{en:'Fri' , th:'วันศุกร์'},{en:'Sat' , th:'วันเสาร์'},{en:'Sun' , th:'วันอาทิตย์'}].map(day => (
+      
+           <div id={day.en} className="mx-auto  lg:pt-10 lg:max-w-6xl md:max-w-3xl md:pt-10 md:pb-9 ">
+           <h2 className="font-bold text-[1.60rem] opacity-70">{day.th}</h2>
      
              <div className="mt-5 lg:grid lg:grid-cols-6 md:grid md:grid-cols-4 md:w-[750px] md:gap-y-2 md:gap-x-3 md:space-y-0 lg:gap-y-2 lg:gap-x-4 lg:space-y-0 lg:w-[1100px] content-start">
-               {products.filter(dayproduct => dayproduct.day === day ).map((callout) => (
+               {products.filter(dayproduct => dayproduct.day.en === day.en ).map((callout) => (
                  <div key={callout.name} className="relative">
                    <div className="min-h-80 aspect-w-1  aspect-h-1 w-full  m overflow-hidden  bg-gray-200 lg:aspect-none lg:h-[300px] lg:w-[180px]">
                      <img
@@ -187,6 +119,7 @@ function Table() {
                ))}
              </div> 
            </div>
+          
      ))}
 
     </div>
