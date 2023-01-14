@@ -1,8 +1,8 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Header from '../components/Header'
 import Banner from '../components/Banner'
 import Row from '../components/Row'
+import HeaderIndex from '../components/HeaderIndex'
 
 const Home: NextPage = () => {
   return (
@@ -13,7 +13,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="https://axistalent.io/uploads/blog/nft.png" />
       </Head>
       {/* Component */}
-      <Header/>
+      <HeaderIndex/>
       <main className="relative ">
       <Banner />
         <section className="mx-auto max-w-7xl   lg:pl-15 md:space-y-20 md:pl-9">

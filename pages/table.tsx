@@ -18,12 +18,7 @@ function table() {
           <main>
             <Daybanner/>
           <Table/>
-          <Table/>
-          <Table/>
-          <Table/>
-          <Table/>
-          <Table/>
-          <Table/>
+
             
           </main>
           {/* Modal */}

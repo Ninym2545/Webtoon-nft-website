@@ -6,7 +6,10 @@ import $ from 'jquery'
 
 
 
+
 function Daybanner() {
+
+
 
   
     $(document).on('click', '.ulday .liday', function() {
@@ -16,13 +19,12 @@ function Daybanner() {
 
   return (
     
-    <div className="mx-auto pt-28 lg:max-w-6xl md:max-w-3xl  ">
-    <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 md:px-10 relative ">
+    <div className="fixed mx-auto pt-20 z-40 w-full bg-black opacity-[92%] ">
+      
+    <div className=" mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 md:px-10 relative ">
     <ul className="ulday">
-        <li className="liday liaction">
-        <Link className="linkx" href="#"><p className="Daybanner whitespace-pre-wrap break-all break-words font-bold  "> ใหม่</p></Link>
-        </li>
-        <li className="liday" >
+
+        <li className="liday liaction" >
         <Link className="linkx" href="#"><p className="Daybanner whitespace-pre-wrap break-all break-words font-bold "> จ.</p></Link>
         </li>
         <li className="liday">
@@ -46,6 +48,7 @@ function Daybanner() {
     </ul>
     </div>
   </div>
+ 
     
   )
 }
