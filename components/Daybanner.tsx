@@ -28,22 +28,22 @@ function Daybanner() {
         <Link className="linkx" href="#Mon"><p className="Daybanner whitespace-pre-wrap break-all break-words font-bold "> จ.</p></Link>
         </li>
         <li className="liday">
-        <Link className="linkx" href="#"><p className="Daybanner whitespace-pre-wrap break-all break-words font-bold  "> อ.</p></Link>
+        <Link className="linkx" href="#Tue"><p className="Daybanner whitespace-pre-wrap break-all break-words font-bold  "> อ.</p></Link>
         </li>
         <li className="liday">
-        <Link className="linkx"  href="#"><p className="Daybanner whitespace-pre-wrap break-all break-words font-bold  "> พ.</p></Link>
+        <Link className="linkx"  href="#Wed"><p className="Daybanner whitespace-pre-wrap break-all break-words font-bold  "> พ.</p></Link>
         </li>
         <li className="liday">
-        <Link className="linkx" href="#"><p className="Daybanner whitespace-pre-wrap break-all break-words font-bold  "> พฤ.</p></Link>
+        <Link className="linkx" href="#Thu"><p className="Daybanner whitespace-pre-wrap break-all break-words font-bold  "> พฤ.</p></Link>
         </li>
         <li className="liday">
         <Link className="linkx" href="#Fri"><p className="Daybanner whitespace-pre-wrap break-all break-words font-bold  "> ศ.</p></Link>
         </li>
         <li className="liday">
-        <Link  className="linkx" href="#"><p className="Daybanner whitespace-pre-wrap break-all break-words font-bold  "> ส.</p></Link>
+        <Link  className="linkx" href="#Sat"><p className="Daybanner whitespace-pre-wrap break-all break-words font-bold  "> ส.</p></Link>
         </li>
         <li className="liday">
-        <Link  className="linkx" href="#"><p className="Daybanner whitespace-pre-wrap break-all break-words font-bold  "> อา.</p></Link>
+        <Link  className="linkx" href="#Sun"><p className="Daybanner whitespace-pre-wrap break-all break-words font-bold  "> อา.</p></Link>
         </li>
     </ul>
     </div>
