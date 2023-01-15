@@ -35,8 +35,8 @@ function Header() {
            />
            <ul className="hidden space-x-4 md:flex ">
             <Link href="/"><li className="headerLink ">NFT WEBTOON</li></Link>
-            <Link href="/table"><li className="headerLink">ตารางเว็บตูน</li></Link>
-            <Link href="#"><li className="headerLink">ชั้นหนังสือ</li></Link>
+            <Link href="/originalWebtoon"><li className="headerLink">ตารางเว็บตูน</li></Link>
+            <Link href="/mypage"><li className="headerLink">ชั้นหนังสือ</li></Link>
             <Link href="#"><li className="headerLink">อันดับ</li></Link>
             <Link href="#"><li className="headerLink">กล่องของขวัญ</li></Link>
            </ul>
