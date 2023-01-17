@@ -37,7 +37,7 @@ function Header() {
             <Link href="/"><li className="headerLink ">NFT WEBTOON</li></Link>
             <Link href="/originalWebtoon"><li className="headerLink">ตารางเว็บตูน</li></Link>
             <Link href="/mypage"><li className="headerLink">ชั้นหนังสือ</li></Link>
-            <Link href="#"><li className="headerLink">อันดับ</li></Link>
+            <Link href="/rank"><li className="headerLink">อันดับ</li></Link>
             <Link href="#"><li className="headerLink">กล่องของขวัญ</li></Link>
            </ul>
         </div>

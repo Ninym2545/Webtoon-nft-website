@@ -6,7 +6,7 @@
 @layer base{
     body{
          font-family: 'Noto Sans Thai',helvetica neue,Helvetica,sans-serif;
-         @apply bg-black text-white ;
+         @apply bg-[#0F0F0F] text-white  scrollbar-thumb-slate-700 scrollbar-track-black scrollbar-thin scroll-smooth
 
     }
     header{
@@ -37,20 +37,38 @@
         opacity: 70%;
     }
     .liday{
-        @apply cursor-pointer relative whitespace-nowrap  flex-1 flex-shrink-0 md:cursor-pointer md:relative md:flex-1 md:flex-shrink-0
+        @apply cursor-pointer   
     }
     .ulday{
-        @apply flex overflow-hidden text-center lg:px-72 md:flex md:first-letter:overflow-hidden md:text-center md:px-[190px]
+        @apply flex overflow-hidden text-center justify-center 
     }
     .ulday .liday{
-        @apply list-none md:list-none
+        @apply list-none md:list-none mx-3 
     }
     .ulday .liday .linkx{
-        @apply relative block no-underline uppercase text-white font-bold md:relative md:block md:no-underline md:uppercase
+        @apply relative block no-underline uppercase  font-bold md:relative md:block md:no-underline md:uppercase
     }
     .ulday .liaction .linkx{
-        @apply bg-white text-black rounded-full mx-2 my-2 -top-2 
+        @apply bg-white text-black rounded-full  my-2 -top-2 px-4 
     }
+
+    .ulrank{
+        @apply flex  overflow-hidden justify-center flex-nowrap  scroll-smooth 
+    }
+    .ulrank .lirank{
+        @apply list-none md:list-none mx-3
+    }
+    .ulrank .lirank .linkxrank{
+        @apply relative block no-underline uppercase  font-bold md:relative md:block md:no-underline md:uppercase
+    }
+    .ulrank .liactionrank .linkxrank{
+        @apply bg-white text-black rounded-full  my-2 -top-2 px-4 
+    }
+    .active{
+        @apply  rounded-full  my-2 -top-0 text-black bg-white px-2 
+    }
+ 
+
 
     
 

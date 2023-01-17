@@ -34,7 +34,7 @@ const products = [
   }
   
 ]
-console.log(products)
+
 
 function banner() {
   return (

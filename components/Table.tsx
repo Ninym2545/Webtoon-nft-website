@@ -500,12 +500,12 @@ function Table() {
   return (
     <div>
 
-      <div className=" pt-[60px] mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 md:px-10">
+      <div className=" pt-[70px] mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 md:px-10">
 
 
         {[{ en: 'Mon', th: 'วันจันทร์', indexd: 1 }, { en: 'Tue', th: 'วันอังคาร', indexd: 2 }, { en: 'Wed', th: 'วันพุธ', indexd: 3 }, { en: 'Thu', th: 'วันพฤหัสบดี', indexd: 4 }, { en: 'Fri', th: 'วันศุกร์', indexd: 5 }, { en: 'Sat', th: 'วันเสาร์', indexd: 6 }, { en: 'Sun', th: 'วันอาทิตย์', indexd: 0 }].map(day => (
 
-          <div id={day.en} className="mx-auto  lg:pt-[50px] lg:scroll-mt-24 lg:pb-0 lg:max-w-6xl md:max-w-3xl  ">
+          <div id={day.en} className="mx-auto  lg:pt-[60px] lg:scroll-mt-24 lg:pb-0 lg:max-w-6xl md:max-w-3xl ">
             <h2 className="font-bold text-[1.60rem] opacity-70">{day.th}</h2>
 
             <div className="mt-5 lg:grid lg:grid-cols-5 md:grid md:grid-cols-4 md:w-[750px] md:gap-y-2 md:gap-x-3 md:space-y-0 lg:gap-y-2 lg:gap-x-4 lg:space-y-0 lg:w-[1100px] content-start">
