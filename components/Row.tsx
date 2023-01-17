@@ -6,136 +6,9 @@ import 'swiper/css';
 import "swiper/css/navigation";
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
+import { products } from '../db/WT_Description';
 
-const products = [
-  {
-    id: 1,
-    name: 'I Plan to Divorce My Villain Husband but We Have A Child',
-    href: '#',
-    imageSrc: '/b-1.jpeg',
-    type: { en: 'romancefan', th: 'โรแมนซ์แฟนตาซี' }
-  },
-  {
-    id: 2,
-    name: 'Can We Become a Family?',
-    href: '#',
-    imageSrc: '/b-2.webp',
-    type: { en: 'romancefan', th: 'โรแมนซ์แฟนตาซี' }
-  },
-  {
-    id: 3,
-    name: 'I Was Reincarnated as a Baby Fox God',
-    href: '#',
-    imageSrc: '/b-3.webp',
-    type: { en: 'action', th: 'แอ็กชัน' }
-  },
-  {
-    id: 4,
-    name: 'Actually I Was the Real One',
-    href: '#',
-    imageSrc: '/b-4.jpg',
-    type: { en: 'action', th: 'แอ็กชัน' }
-  },
-  {
-    id: 5,
-    name: 'Hey, Little Duke Only Trust Your Sister!',
-    href: '#',
-    imageSrc: '/b-5.webp',
-    type: { en: 'drama', th: 'ดราม่า' }
-  },
-  {
-    id: 6,
-    name: 'I Plan to Divorce My Villain Husband but We Have A Child',
-    href: '#',
-    imageSrc: '/b-1.jpeg',
-    type: { en: 'drama', th: 'ดราม่า' }
-  },
-  {
-    id: 7,
-    name: 'Can We Become a Family?',
-    href: '#',
-    imageSrc: '/b-2.webp',
-    type: { en: 'commedy', th: 'ตลก' }
-  },
-  {
-    id: 8,
-    name: 'I Was Reincarnated as a Baby Fox God',
-    href: '#',
-    imageSrc: '/b-3.webp',
-    type: { en: 'commedy', th: 'ตลก' }
-  },
-  {
-    id: 9,
-    name: 'Actually I Was the Real One',
-    href: '#',
-    imageSrc: '/b-4.jpg',
-    type: { en: 'horror', th: 'สยองขวัญ' }
-  },
-  {
-    id: 10,
-    name: 'Hey, Little Duke Only Trust Your Sister!',
-    href: '#',
-    imageSrc: '/b-5.webp',
-    type: { en: 'horror', th: 'สยองขวัญ' }
-  },
-  {
-    id: 11,
-    name: 'I Plan to Divorce My Villain Husband but We Have A Child',
-    href: '#',
-    imageSrc: '/b-1.jpeg',
-    type: { en: 'romance', th: 'โรแมนซ์' }
-  },
-  {
-    id: 12,
-    name: 'I Plan to Divorce My Villain Husband but We Have A Child',
-    href: '#',
-    imageSrc: '/b-1.jpeg',
-    type: { en: 'romance', th: 'โรแมนซ์' }
-  },
-  {
-    id: 13,
-    name: 'I Plan to Divorce My Villain Husband but We Have A Child',
-    href: '#',
-    imageSrc: '/b-1.jpeg',
-    type: { en: 'romance', th: 'โรแมนซ์' }
-  },
-  {
-    id: 14,
-    name: 'I Plan to Divorce My Villain Husband but We Have A Child',
-    href: '#',
-    imageSrc: '/b-1.jpeg',
-    type: { en: 'romance', th: 'โรแมนซ์' }
-  },
-  {
-    id: 11,
-    name: 'I Plan to Divorce My Villain Husband but We Have A Child',
-    href: '#',
-    imageSrc: '/b-1.jpeg',
-    type: { en: 'romance', th: 'โรแมนซ์' }
-  },
-  {
-    id: 12,
-    name: 'I Plan to Divorce My Villain Husband but We Have A Child',
-    href: '#',
-    imageSrc: '/b-1.jpeg',
-    type: { en: 'romance', th: 'โรแมนซ์' }
-  },
-  {
-    id: 11,
-    name: 'I Plan to Divorce My Villain Husband but We Have A Child',
-    href: '#',
-    imageSrc: '/b-1.jpeg',
-    type: { en: 'romance', th: 'โรแมนซ์' }
-  },
-  {
-    id: 12,
-    name: 'I Plan to Divorce My Villain Husband but We Have A Child',
-    href: '#',
-    imageSrc: '/b-1.jpeg',
-    type: { en: 'romance', th: 'โรแมนซ์' }
-  },
 
-]
 
 function Row() {
 
@@ -143,23 +16,22 @@ function Row() {
 
     <div className="sm:px-6 lg:max-w-7xl">
 
-      {[{ en: 'romancefan', th: 'โรแมนซ์แฟนตาซี' },{ en: 'romance', th: 'โรแมนซ์' }, { en: 'action', th: 'แอ็กชัน' }, { en: 'drama', th: 'ดราม่า' }, { en: 'horror', th: 'สยองขวัญ' }, { en: 'commedy', th: 'ตลก' }].map(type => (
-        <><h2 className="font-bold text-2xl">{type.th}</h2><Swiper className="group relative"
+      {[{ en: 'romancefan', th: 'โรแมนซ์แฟนตาซี' }, { en: 'romance', th: 'โรแมนซ์' }, { en: 'action', th: 'แอ็กชัน' }, { en: 'drama', th: 'ดราม่า' }, { en: 'horror', th: 'สยองขวัญ' }, { en: 'commedy', th: 'ตลก' }].map(type => (
+        <><h2 className="font-bold text-2xl">{type.th}</h2><Swiper className="group relative w-full h-full"
 
           breakpoints={{
             976: {
-              slidesPerView: 6,
+              slidesPerView: 5,
+              spaceBetween: 90
             },
             480: {
               slidesPerView: 2,
             },
-            890: {
-              slidesPerView: 4,
-            },
+
           }}
 
-          // spaceBetween={1} 
-          // slidesPerView={6}
+          //  spaceBetween={85} 
+          //  slidesPerView={5}
           navigation={{
             nextEl: '.button-next-slide',
             prevEl: '.button-prev-slide'
@@ -172,27 +44,40 @@ function Row() {
           {products.filter(dayproduct => dayproduct.type.en === type.en).map((product) => (
 
 
-            <SwiperSlide className="pb-16 pt-2 mr-3">
-              <div className="ml-4 mr-5 mt-5  ">
+            <SwiperSlide className="pb-16 pt-2">
+              <div className="mt-5  ">
                 <div key={product.id} className="group relative">
-                  <div className="min-h-80 aspect-w-1  aspect-h-1  bg-gray-200 lg:aspect-none h-[300px] w-[200px] ">
-                    <img
-                      src={product.imageSrc}
-                      className="h-full w-full object-cover object-center   " />
-                    <div className=" opacity-[0.91] bg-gradient-to-t from-black h-[300px] w-[200px] absolute flex  bottom-0 hover:opacity-100  ">
-                  </div>
+                  <div className="aspect-w-1  aspect-h-1  h-[400px] w-[250px] ">
+                    {/* Image h-400px w-250px */}
+                    <div className="relative mb-2">
+                      <img src={product.imageBg}
+                        className="h-[400px] w-[250px]  mb-1 "
+                      />
+                      <div className="justify-end opacity-50 absolute flex  bottom-0  z-50  hover:opacity-0 ">
+                        <Link href={product.href}>
+                          <img src={product.imageBgText}
+                            className="h-[400px] w-[250px] "
+                          />
+                        </Link>
+                      </div>
+
+                      <div className="justify-end  l  absolute flex  bottom-0 ">
+                        <img src={product.imageFg}
+                          className="h-[400px] w-[250px]"
+                        />
+                      </div>
+
+                      <div className="flex absolute bottom-0  ">
+                        <Link href={product.href}>
+                          <img src={product.imageLogo} className="w-[250] h-[400px]" />
+                        </Link>
+                      </div>
+                    </div>
+
                   </div>
 
-                  
-                  <div className=" mt-4 flex absolute  bottom-3 text-center inset-x-5  w-40">
-                    <div>
-                      <Link href={product.href}>
-                        <h3 className="text-base font-bold text-white ">
-                          {product.name}
-                        </h3>
-                      </Link>
-                    </div>
-                  </div>
+
+
 
                 </div>
               </div>
