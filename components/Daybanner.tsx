@@ -23,7 +23,7 @@ const Daybanner:FC<Props> = ({currDay}) =>{
     <ul className="ulday items-center">
 
         <li className={click ? "liday active" : "liday"}  >
-        <Link className="linkx" to="Mon" spy={true} smooth={true} offset={-200} duration={500}><p className="Daybanner whitespace-pre-wrap break-all break-words font-bold  "> จ.</p></Link>
+        <Link className="linkx" to="Mon" spy={true} smooth={true} offset={-150} duration={500}><p className="Daybanner whitespace-pre-wrap break-all break-words font-bold  "> จ.</p></Link>
         </li>
         <li className={click ? "liday active" : "liday"}  >
         <Link className="linkx" to="Tue" spy={true} smooth={true} offset={-100} duration={500}><p className="Daybanner whitespace-pre-wrap break-all break-words font-bold  "> อ.</p></Link>

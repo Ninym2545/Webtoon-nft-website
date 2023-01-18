@@ -1,10 +1,13 @@
 import Head from 'next/head'
-import React from 'react'
+import React, { useState } from 'react'
 import Header from '../components/Header'
 import Rankbanner from '../components/Rankbanner'
 import Ranktable from '../components/Ranktable'
 
 function rank() {
+
+  const [typewt, settypewt] = useState <String> ('romancefan')
+  
   return (
     <div className="relative h-screen bg-gradient-to-b from-gray-900/10
     to-[#010511] lg:h-[140vh]">
@@ -15,8 +18,8 @@ function rank() {
       {/* Component */}
       <Header/>
       <main>
-        <Rankbanner/>
-        <Ranktable/>
+        <Rankbanner settypewt={settypewt} typewt={typewt}/>
+        <Ranktable  typewt={typewt}/>
 
         
       </main>

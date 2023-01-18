@@ -16,7 +16,7 @@ const Home: NextPage = () => {
       <HeaderIndex/>
       <main className="relative ">
       <Banner />
-        <section className="mx-auto max-w-7xl   lg:pl-15 md:space-y-20 md:pl-9">
+        <section className="mx-auto max-w-[1240px] ">
           <Row/>
           
 

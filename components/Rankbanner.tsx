@@ -1,14 +1,20 @@
 import Link from 'next/link'
-import React, { useEffect } from 'react'
+import React, { FC, useEffect } from 'react'
 import $ from 'jquery'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation } from "swiper";
+import { WT_Category } from '../db/WT_Category';
 
 
 
 
+interface Props {
+  settypewt: React.Dispatch<React.SetStateAction<String>>
+  typewt: String
 
-function Mypagebanner() {
+}
+
+const Rankbanner: FC<Props> = ({ settypewt, typewt }) => {
 
   useEffect(() => {
 
@@ -26,26 +32,14 @@ function Mypagebanner() {
     <div className="fixed  pt-20 z-40 w-full bg-[#0F0F0F] opacity-[92%] sm:pt-[70px] ">
 
       <ul className="ulrank">
-
-          <li className="lirank liactionrank" >
-            <Link className="linkxrank" href="#"><p className="Daybanner whitespace-pre-wrap break-all break-words font-bold ">โรแมนซ์แฟนตาซี</p></Link>
-          </li>
-          <li className="lirank">
-            <Link className="linkxrank" href="#"><p className="Daybanner whitespace-pre-wrap break-all break-words font-bold  ">โรแมนซ์</p></Link>
-          </li>
-          <li className="lirank">
-            <Link className="linkxrank" href="#"><p className="Daybanner whitespace-pre-wrap break-all break-words font-bold  ">แอ็กชัน</p></Link>
-          </li>
-          <li className="lirank">
-            <Link className="linkxrank" href="#"><p className="Daybanner whitespace-pre-wrap break-all break-words font-bold  ">ดราม่า</p></Link>
-          </li>
-          <li className="lirank">
-            <Link className="linkxrank" href="#"><p className="Daybanner whitespace-pre-wrap break-all break-words font-bold  ">สยองขวัญ</p></Link>
-          </li>
-          <li className="lirank">
-            <Link className="linkxrank" href="#"><p className="Daybanner whitespace-pre-wrap break-all break-words font-bold  ">ตลก</p></Link>
-          </li>
-        </ul>
+        {
+          WT_Category.map(ty_cat => (
+            <li className={`lirank ${ty_cat.typewt.en === typewt ? "liactionrank" : ""}`} >
+              <button className="linkxrank" onClick={() => { settypewt(ty_cat.typewt.en) }} ><p className="Daybanner whitespace-pre-wrap break-all break-words font-bold ">{ty_cat.typewt.th}</p></button>
+            </li>
+          ))
+        }
+      </ul>
     </div>
 
 
@@ -53,5 +47,5 @@ function Mypagebanner() {
   )
 }
 
-export default Mypagebanner
+export default Rankbanner
 

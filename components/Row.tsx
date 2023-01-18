@@ -7,6 +7,7 @@ import "swiper/css/navigation";
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import { products } from '../db/WT_Description';
+import { WT_Category } from '../db/WT_Category';
 
 
 
@@ -14,10 +15,10 @@ function Row() {
 
   return (
 
-    <div className="sm:px-6 lg:max-w-7xl">
+    <div className="sm:px-6 lg:max-w-full">
 
-      {[{ en: 'romancefan', th: 'โรแมนซ์แฟนตาซี' }, { en: 'romance', th: 'โรแมนซ์' }, { en: 'action', th: 'แอ็กชัน' }, { en: 'drama', th: 'ดราม่า' }, { en: 'horror', th: 'สยองขวัญ' }, { en: 'commedy', th: 'ตลก' }].map(type => (
-        <><h2 className="font-bold text-2xl">{type.th}</h2><Swiper className="group relative w-full h-full"
+      {WT_Category.map(type => (
+        <><h2 className="font-bold text-2xl">{type.typewt.th}</h2><Swiper className="group relative w-full h-full"
 
           breakpoints={{
             976: {
@@ -41,7 +42,7 @@ function Row() {
         >
 
 
-          {products.filter(dayproduct => dayproduct.type.en === type.en).map((product) => (
+          {products.filter(dayproduct => dayproduct.typewt.en === type.typewt.en).map((product) => (
 
 
             <SwiperSlide className="pb-16 pt-2">
@@ -53,7 +54,7 @@ function Row() {
                       <img src={product.imageBg}
                         className="h-[400px] w-[250px]  mb-1 "
                       />
-                      <div className="justify-end opacity-50 absolute flex  bottom-0  z-50  hover:opacity-0 ">
+                      <div className="justify-end opacity-40 absolute flex  bottom-0  z-50  hover:opacity-0 ">
                         <Link href={product.href}>
                           <img src={product.imageBgText}
                             className="h-[400px] w-[250px] "
