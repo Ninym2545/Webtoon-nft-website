@@ -221,6 +221,32 @@ export const products = [
       chapter: '006'
 
     },
+    {
+      id: 18,
+      name: 'I Plan to Divorce My Villain Husband but We Have A Child',
+      href: '#',
+      imageLogo: '/poster_logo/Ly_logo.png',
+      imageBg: '/poster_bg/Ly_BG.png',
+      imageBgText: '/poster_bg_text/Ly_BG_Text.png',
+      imageFg: '/poster_fg/Ly_FG.png',
+      day: { en: 'Sun', th: 'วันอาทิตย์' },
+      typewt: { en: 'commedy', th: 'ตลก' },
+      chapter: '006'
+
+    },
+    {
+      id: 19,
+      name: 'I Plan to Divorce My Villain Husband but We Have A Child',
+      href: '#',
+      imageLogo: '/poster_logo/Ly_logo.png',
+      imageBg: '/poster_bg/Ly_BG.png',
+      imageBgText: '/poster_bg_text/Ly_BG_Text.png',
+      imageFg: '/poster_fg/Ly_FG.png',
+      day: { en: 'Sun', th: 'วันอาทิตย์' },
+      typewt: { en: 'commedy', th: 'ตลก' },
+      chapter: '006'
+
+    },
 
     
     
