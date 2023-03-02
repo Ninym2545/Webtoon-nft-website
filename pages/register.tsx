@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import HeaderLogin from '../components/HeaderLogin'
-import LoginForm from '../components/LoginForm'
+import RegisterForm from '../components/RegisterForm'
 
 const Home: NextPage = () => {
   return (
@@ -14,7 +14,7 @@ const Home: NextPage = () => {
       {/* Component */}
       <HeaderLogin/>
       <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-        <LoginForm/>
+        <RegisterForm/>
         
       </main>
       {/* Modal */}

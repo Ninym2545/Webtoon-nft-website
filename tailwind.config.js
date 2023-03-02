@@ -24,5 +24,6 @@ module.exports = {
     require('tailwindcss-textshadow'),
     require('tailwind-scrollbar-hide'),
     require('tailwind-scrollbar')({ nocompatible: true }),
+    require('flowbite/plugin')
   ],
 }

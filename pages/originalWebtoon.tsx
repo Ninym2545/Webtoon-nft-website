@@ -1,9 +1,9 @@
 import Head from 'next/head'
-import React, { useCallback, useEffect, useState } from 'react'
+import React, {  useEffect, useState } from 'react'
 import Header from '../components/Header'
 import Table from '../components/Table'
 import Daybanner from '../components/Daybanner'
-import $ from 'jquery'
+
 
 
 

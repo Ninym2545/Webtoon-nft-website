@@ -3,7 +3,7 @@ import React from 'react'
 import Header from '../components/Header'
 import Mypagebanner from '../components/Mypagebanner'
 import Mypagetable from '../components/Mypagetable'
-import Table from '../components/Table'
+
 
 function mypage() {
   return (

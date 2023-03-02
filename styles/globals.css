@@ -22,7 +22,7 @@
         @apply content-[''] absolute -bottom-[5px] left-0 w-0 h-[4px]  opacity-0 transition-all duration-500 bg-white
     }
     .headerLink:hover::before{
-        @apply w-full opacity-100
+        @apply w-full opacity-100 
     }
     .headerLink.active::after{
         @apply content-[''] absolute -bottom-[5px] left-0 w-0 h-[4px]  opacity-0 transition-all duration-500 bg-white

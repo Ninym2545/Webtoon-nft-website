@@ -55,7 +55,7 @@ function Row() {
                         className="h-[400px] w-[250px]  mb-1 "
                       />
                       <div className="justify-end opacity-40 absolute flex  bottom-0  z-50  hover:opacity-0 ">
-                        <Link href={product.href}>
+                        <Link href="/webtoonDetails">
                           <img src={product.imageBgText}
                             className="h-[400px] w-[250px] "
                           />
@@ -69,7 +69,7 @@ function Row() {
                       </div>
 
                       <div className="flex absolute bottom-0  ">
-                        <Link href={product.href}>
+                        <Link href="/webtoonDetails">
                           <img src={product.imageLogo} className="w-[250] h-[400px]" />
                         </Link>
                       </div>

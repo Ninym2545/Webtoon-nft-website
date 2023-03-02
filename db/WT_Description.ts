@@ -247,6 +247,123 @@ export const products = [
       chapter: '006'
 
     },
+    {
+      id: 20,
+      name: 'I Plan to Divorce My Villain Husband but We Have A Child',
+      href: '#',
+      imageLogo: '/poster_logo/Ly_logo.png',
+      imageBg: '/poster_bg/Ly_BG.png',
+      imageBgText: '/poster_bg_text/Ly_BG_Text.png',
+      imageFg: '/poster_fg/Ly_FG.png',
+      day: { en: 'Sun', th: 'วันอาทิตย์' },
+      typewt: { en: 'commedy', th: 'ตลก' },
+      chapter: '006'
+
+    },
+    {
+      id: 21,
+      name: 'I Plan to Divorce My Villain Husband but We Have A Child',
+      href: '#',
+      imageLogo: '/poster_logo/Ly_logo.png',
+      imageBg: '/poster_bg/Ly_BG.png',
+      imageBgText: '/poster_bg_text/Ly_BG_Text.png',
+      imageFg: '/poster_fg/Ly_FG.png',
+      day: { en: 'Sun', th: 'วันอาทิตย์' },
+      typewt: { en: 'commedy', th: 'ตลก' },
+      chapter: '006'
+
+    },
+    {
+      id: 22,
+      name: 'I Plan to Divorce My Villain Husband but We Have A Child',
+      href: '#',
+      imageLogo: '/poster_logo/Ly_logo.png',
+      imageBg: '/poster_bg/Ly_BG.png',
+      imageBgText: '/poster_bg_text/Ly_BG_Text.png',
+      imageFg: '/poster_fg/Ly_FG.png',
+      day: { en: 'Sun', th: 'วันอาทิตย์' },
+      typewt: { en: 'commedy', th: 'ตลก' },
+      chapter: '006'
+
+    },
+    {
+      id: 23,
+      name: 'I Plan to Divorce My Villain Husband but We Have A Child',
+      href: '#',
+      imageLogo: '/poster_logo/Ly_logo.png',
+      imageBg: '/poster_bg/Ly_BG.png',
+      imageBgText: '/poster_bg_text/Ly_BG_Text.png',
+      imageFg: '/poster_fg/Ly_FG.png',
+      day: { en: 'Sun', th: 'วันอาทิตย์' },
+      typewt: { en: 'commedy', th: 'ตลก' },
+      chapter: '006'
+
+    },
+    {
+      id: 24,
+      name: 'I Plan to Divorce My Villain Husband but We Have A Child',
+      href: '#',
+      imageLogo: '/poster_logo/Ly_logo.png',
+      imageBg: '/poster_bg/Ly_BG.png',
+      imageBgText: '/poster_bg_text/Ly_BG_Text.png',
+      imageFg: '/poster_fg/Ly_FG.png',
+      day: { en: 'Sun', th: 'วันอาทิตย์' },
+      typewt: { en: 'commedy', th: 'ตลก' },
+      chapter: '006'
+
+    },
+    {
+      id: 25,
+      name: 'I Plan to Divorce My Villain Husband but We Have A Child',
+      href: '#',
+      imageLogo: '/poster_logo/Ly_logo.png',
+      imageBg: '/poster_bg/Ly_BG.png',
+      imageBgText: '/poster_bg_text/Ly_BG_Text.png',
+      imageFg: '/poster_fg/Ly_FG.png',
+      day: { en: 'Sun', th: 'วันอาทิตย์' },
+      typewt: { en: 'commedy', th: 'ตลก' },
+      chapter: '006'
+
+    },
+    {
+      id: 26,
+      name: 'I Plan to Divorce My Villain Husband but We Have A Child',
+      href: '#',
+      imageLogo: '/poster_logo/Ly_logo.png',
+      imageBg: '/poster_bg/Ly_BG.png',
+      imageBgText: '/poster_bg_text/Ly_BG_Text.png',
+      imageFg: '/poster_fg/Ly_FG.png',
+      day: { en: 'Sun', th: 'วันอาทิตย์' },
+      typewt: { en: 'commedy', th: 'ตลก' },
+      chapter: '006'
+
+    },
+    {
+      id: 27,
+      name: 'I Plan to Divorce My Villain Husband but We Have A Child',
+      href: '#',
+      imageLogo: '/poster_logo/Ly_logo.png',
+      imageBg: '/poster_bg/Ly_BG.png',
+      imageBgText: '/poster_bg_text/Ly_BG_Text.png',
+      imageFg: '/poster_fg/Ly_FG.png',
+      day: { en: 'Sun', th: 'วันอาทิตย์' },
+      typewt: { en: 'commedy', th: 'ตลก' },
+      chapter: '006'
+
+    },
+    {
+      id: 28,
+      name: 'I Plan to Divorce My Villain Husband but We Have A Child',
+      href: '#',
+      imageLogo: '/poster_logo/Ly_logo.png',
+      imageBg: '/poster_bg/Ly_BG.png',
+      imageBgText: '/poster_bg_text/Ly_BG_Text.png',
+      imageFg: '/poster_fg/Ly_FG.png',
+      day: { en: 'Sun', th: 'วันอาทิตย์' },
+      typewt: { en: 'commedy', th: 'ตลก' },
+      chapter: '006'
+
+    },
 
     
     
